@@ -19,8 +19,8 @@ img {
 }
 
 #sidebar {
-    border-style: solid;
     grid-row: 1 / 3;
+    margin-top: -25px;
 }
 
 #sidebar #main-container {
@@ -43,9 +43,49 @@ img {
 
 
 #header {
-    border-style: solid;
 }
 
+#header #top {
+    display: grid;
+    grid-template-columns: 5fr 1fr 2fr;
+    grid-template-areas:
+        "left-side . right-side";
+    align-items: center;
+    margin-top: 1.5px;
+}
+
+#top img {
+    height: 35px;
+    padding: 0px;
+    border: 0px;
+}
+
+#top #left {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    align-items: center;
+    grid-area: left-side;
+}
+
+#left #search-bar {
+    height: 30px;
+    background-color: rgba(170, 174, 177, 0.377);
+    border-radius: 15px;
+}
+
+#top #right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr;
+    align-items: center;
+    grid-area: right-side;
+    gap: 10px;
+}
+
+#top h2 {
+    font-size: 25px;
+}
+
+
+
 #main-content {
-    border-style: solid;
 }
