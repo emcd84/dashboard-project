@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     display: grid;
     grid-template: 1fr 5fr / 1fr 5fr;
     height: 1000px;
+    font-family: Roboto, sans-serif;
 }
 
 img {
@@ -27,7 +30,7 @@ img {
     display: grid;
     grid-template-rows: 1fr 4fr 3fr;
     gap: 20px;
-    background-color: rgba(94, 169, 240, 0.596);
+    background-color: #1DA1F2;
     height: 100%;
 }
 
@@ -43,6 +46,10 @@ img {
 
 
 #header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 200px;
+    gap: 25px;
 }
 
 #header #top {
@@ -85,7 +92,47 @@ img {
     font-size: 25px;
 }
 
+#header #bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 400px;
+}
 
+#bottom #left {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    gap: 15px;
+}
 
-#main-content {
+#bottom #left img {
+    height: 60px;
+}
+
+#bottom #left #name h1, #bottom #left #name h5 {
+    margin: 0px;
+}
+
+#bottom #left #name h5 {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+#bottom #right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#bottom #right button {
+    background-color: #1DA1F2;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
+    color: white;
+    font-size: 18px;
+    padding: 0px;
 }
